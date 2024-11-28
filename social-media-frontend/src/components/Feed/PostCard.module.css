@@ -1,0 +1,78 @@
+/* Main post card container */
+.postCard {
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0072ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .postCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Author name */
+  .author {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0072ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Post content */
+  .content {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Like button */
+  .likeButton {
+    display: inline-block;
+    background: linear-gradient(135deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .likeButton:hover {
+    background: linear-gradient(135deg, #005bb5 0%, #0094cc 100%);
+    transform: translateY(-2px);
+  }
+  
+  .likeButton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .postCard {
+      padding: 1rem;
+    }
+  
+    .author {
+      font-size: 1rem;
+    }
+  
+    .content {
+      font-size: 0.9rem;
+    }
+  
+    .likeButton {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
